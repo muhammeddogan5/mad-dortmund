@@ -3,59 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEWO M.A.D. DORTMUND | Luxury Monteur Stay</title>
+    <title>FEWO M.A.D. DORTMUND | Premium Stay</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --bvb-yellow: #FDE100; --dark-bg: #0a0a0a; --card-bg: #161616; }
-        body { margin: 0; font-family: 'Poppins', sans-serif; background: var(--dark-bg); color: white; }
+        :root { --gold: #FDE100; --dark: #0a0a0a; --card: #161616; }
+        body { margin: 0; font-family: 'Poppins', sans-serif; background: var(--dark); color: white; }
 
-        /* Dev Giriş Alanı - Dortmund Ruhu */
         .hero {
-            height: 90vh;
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('mad2_6.jpg');
+            height: 65vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('mad2_1.jpg');
             background-size: cover; background-position: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
-            border-bottom: 12px solid var(--bvb-yellow); text-align: center;
+            border-bottom: 10px solid var(--gold); text-align: center;
         }
 
-        .bull-logo {
-            font-size: 100px; color: var(--bvb-yellow); margin-bottom: 10px;
-            filter: drop-shadow(0 0 20px rgba(253, 225, 0, 0.6));
+        .bull-logo { font-size: 80px; color: var(--gold); margin-bottom: 10px; filter: drop-shadow(0 0 15px rgba(253,225,0,0.4)); }
+        h1 { font-family: 'Montserrat', sans-serif; font-size: 3.5rem; margin: 0; color: var(--gold); }
+
+        .container { max-width: 1200px; margin: -60px auto 50px; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+
+        .card { background: var(--card); border-radius: 25px; overflow: hidden; border: 1px solid #333; transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); border-color: var(--gold); }
+        .card img { width: 100%; height: 300px; object-fit: cover; }
+
+        .info { padding: 25px; border-top: 4px solid var(--gold); }
+        .info h3 { color: var(--gold); margin: 0 0 10px; font-size: 1.5rem; }
+        
+        .wa-btn {
+            display: inline-block; background: var(--gold); color: #000;
+            padding: 18px 40px; border-radius: 50px; font-weight: 800;
+            text-decoration: none; margin-top: 20px; transition: 0.3s;
         }
-
-        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: 4.5rem; margin: 0; color: var(--bvb-yellow); letter-spacing: -3px; }
-        .hero p { font-size: 1.6rem; color: #eee; margin-top: 10px; font-weight: 300; }
-
-        /* Premium Kartlar */
-        .main-content { max-width: 1300px; margin: -120px auto 60px; padding: 0 20px; }
-        .property-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 40px; }
-
-        .luxury-card {
-            background: var(--card-bg); border-radius: 30px; overflow: hidden;
-            border: 1px solid #222; transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.6);
-        }
-
-        .luxury-card:hover { transform: translateY(-20px); border-color: var(--bvb-yellow); box-shadow: 0 35px 60px rgba(253, 225, 0, 0.15); }
-
-        .luxury-card img { width: 100%; height: 350px; object-fit: cover; transition: 0.6s; }
-        .luxury-card:hover img { transform: scale(1.1); }
-
-        .card-body { padding: 30px; border-top: 4px solid var(--bvb-yellow); }
-        .card-body h3 { font-size: 1.8rem; margin: 0 0 15px; color: var(--bvb-yellow); }
-        .card-body p { color: #bbb; line-height: 1.6; font-size: 1.1rem; }
-
-        /* WhatsApp Butonu */
-        .cta-button {
-            display: inline-block; background: var(--bvb-yellow); color: #000;
-            padding: 22px 50px; border-radius: 100px; font-weight: 900;
-            text-decoration: none; font-size: 1.3rem; text-transform: uppercase;
-            margin-top: 30px; transition: 0.3s; box-shadow: 0 15px 30px rgba(253, 225, 0, 0.3);
-        }
-        .cta-button:hover { background: #fff; transform: scale(1.05); box-shadow: 0 20px 40px rgba(255,255,255,0.2); }
-
-        footer { padding: 80px; text-align: center; background: #050505; color: #444; border-top: 1px solid #111; }
     </style>
 </head>
 <body>
@@ -63,39 +43,28 @@
 <div class="hero">
     <div class="bull-logo"><i class="fa-solid fa-bullhorn"></i></div>
     <h1>M.A.D. DORTMUND</h1>
-    <p>Premium Monteurzimmer & Business Apartments</p>
-    <a href="https://wa.me/491632211158" class="cta-button">Hemen Teklif Al</a>
+    <p>Premium Accommodation & Business Apartments</p>
+    <a href="https://wa.me/491632211158" class="wa-btn">Rezervasyon Yap</a>
 </div>
 
-<div class="main-content">
-    <div class="property-grid">
-        <div class="luxury-card">
-            <img src="mad1_1.jpg" onerror="this.src='https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'">
-            <div class="card-body">
-                <h3>Executive Lounge</h3>
-                <p>Modern dizayn ve yüksek teknoloji ile donatılmış geniş oturma alanı.</p>
-            </div>
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <img src="mad1_1.jpg">
+            <div class="info"><h3>Modern Salon</h3><p>Konforlu ve geniş yaşam alanı.</p></div>
         </div>
-        <div class="luxury-card">
-            <img src="mad2_1.jpg" onerror="this.src='https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80'">
-            <div class="card-body">
-                <h3>Superior Bedroom</h3>
-                <p>Maksimum sessizlik ve konfor için tasarlanmış özel uyku alanı.</p>
-            </div>
+        <div class="card">
+            <img src="mad2_1.jpg">
+            <div class="info"><h3>Lüks Yatak Odası</h3><p>Huzurlu bir konaklama deneyimi.</p></div>
         </div>
-        <div class="luxury-card">
-            <img src="mad3_1.jpg" onerror="this.src='https://images.unsplash.com/photo-1556911220-e150213ff167?auto=format&fit=crop&w=800&q=80'">
-            <div class="card-body">
-                <h3>Full-Equipped Kitchen</h3>
-                <p>İhtiyacınız olan tüm profesyonel mutfak ekipmanları tek bir yerde.</p>
-            </div>
+        <div class="card">
+            <img src="mad3_1.jpg">
+            <div class="info"><h3>Tam Donanımlı Mutfak</h3><p>İhtiyacınız olan her şey mevcut.</p></div>
         </div>
     </div>
 </div>
 
-<footer>
-    <p>&copy; 2026 FEWO M.A.D. DORTMUND - Premium Housing Solutions</p>
-</footer>
+<footer style="text-align:center; padding:50px; color:#444;">&copy; 2026 FEWO M.A.D. DORTMUND</footer>
 
 </body>
 </html>
