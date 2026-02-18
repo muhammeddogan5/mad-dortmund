@@ -3,131 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEWO M.A.D. Dortmund | Premium Konaklama</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <title>FEWO M.A.D. DORTMUND | Premium Stay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --bvb-yellow: #FDE100;
-            --bvb-black: #111111;
-            --glass: rgba(255, 255, 255, 0.9);
-        }
+        :root { --gold: #FDE100; --dark: #0f0f0f; --card: #1e1e1e; }
+        body { margin: 0; font-family: 'Poppins', sans-serif; background: var(--dark); color: white; overflow-x: hidden; }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background: #1a1a1a; /* Arka planı koyu ve asil yaptık */
-            color: #fff;
-        }
-
-        /* Hero Bölümü (Boğa ve Şehir Temalı) */
+        /* Arka Planda Dortmund Ruhu */
         .hero {
-            height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('mad2_6.jpg'); /* Ana görsel */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-bottom: 8px solid var(--bvb-yellow);
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-            margin: 0;
-            color: var(--bvb-yellow);
-        }
-
-        /* Galeri - Resimleri düzelten kısım */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .property-card {
-            background: var(--glass);
-            border-radius: 20px;
-            overflow: hidden;
-            color: #333;
-            transition: 0.4s;
-            border: 2px solid transparent;
-        }
-
-        .property-card:hover {
-            transform: scale(1.03);
-            border-color: var(--bvb-yellow);
-        }
-
-        .property-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .info { padding: 20px; }
-
-        /* WhatsApp Butonu */
-        .btn-wa {
-            background: #25d366;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-        }
-
-        /* Boğa İkonu ve Süslemeler */
-        .bull-icon {
-            font-size: 50px;
-            color: var(--bvb-yellow);
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="hero">
-    <div class="bull-icon"><i class="fas fa-bullhorn"></i></div> <h1>FEWO M.A.D. DORTMUND</h1>
-    <p>Sadece bir konaklama değil, bir Dortmund deneyimi.</p>
-    <a href="https://wa.me/491632211158" class="btn-wa">Hemen Yerini Ayır</a>
-</div>
-
-<div class="grid-container">
-    <div class="property-card">
-        <img src="mad1_1.jpg" onerror="this.src='https://via.placeholder.com/400x300?text=Resim+Yukleniyor...'">
-        <div class="info">
-            <h3>Modern Yaşam Alanı</h3>
-            <p>Konfor ve şıklığın birleştiği geniş salonumuz.</p>
-        </div>
-    </div>
-    <div class="property-card">
-        <img src="mad2_1.jpg" onerror="this.src='https://via.placeholder.com/400x300?text=Resim+Yukleniyor...'">
-        <div class="info">
-            <h3>Huzurlu Yatak Odası</h3>
-            <p>Günün yorgunluğunu atacağınız ortopedik yataklar.</p>
-        </div>
-    </div>
-    <div class="property-card">
-        <img src="mad3_1.jpg" onerror="this.src='https://via.placeholder.com/400x300?text=Resim+Yukleniyor...'">
-        <div class="info">
-            <h3>Gurme Mutfak</h3>
-            <p>İhtiyacınız olan tüm ekipmanlarla donatıldı.</p>
-        </div>
-    </div>
-</div>
-
-<footer style="text-align: center; padding: 50px; background: #111;">
-    <p>&copy; 2026 FEWO M.A.D. - Dortmund'un En İyi Monteur Evi</p>
-</footer>
-
-</body>
-</html>
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mad2_6.jpg'); 
+            background-size: cover; background-position: center;
+            display: flex
